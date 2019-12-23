@@ -1,0 +1,1 @@
+../../../../../XNTools/Classes/XNViews/XNBannerView/NSData+XNDataCache.h

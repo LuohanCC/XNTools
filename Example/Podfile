@@ -1,0 +1,11 @@
+#use_frameworks!
+
+target 'XNTools_Example' do
+  pod 'XNTools', :path => '../'
+
+  target 'XNTools_Tests' do
+    inherit! :search_paths
+
+#    pod 'Canvas'
+  end
+end

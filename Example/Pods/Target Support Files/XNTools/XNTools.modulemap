@@ -1,0 +1,6 @@
+framework module XNTools {
+  umbrella header "XNTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

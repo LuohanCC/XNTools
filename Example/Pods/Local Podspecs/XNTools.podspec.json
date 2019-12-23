@@ -1,0 +1,73 @@
+{
+  "name": "XNTools",
+  "version": "1.6.7",
+  "summary": "create XNTools by luohan",
+  "description": "TODO: Add long description of the pod here1.",
+  "homepage": "https://gitee.com/luohancc/XNTools.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "罗函": "luohancc@163.com"
+  },
+  "source": {
+    "git": "https://gitee.com/luohancc/XNTools.git",
+    "tag": "1.6.7"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XNTools/Classes/*.h",
+  "resource_bundles": {
+    "XNTools": [
+      "XNTools/Assets/**/*"
+    ]
+  },
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "AFNetworking": [
+
+    ],
+    "XNProgressHUD": [
+
+    ],
+    "lottie-ios": [
+
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "AVFoundation"
+  ],
+  "libraries": [
+    "c++",
+    "resolv"
+  ],
+  "subspecs": [
+    {
+      "name": "XNViewController",
+      "source_files": "XNTools/Classes/XNViewController/**/*"
+    },
+    {
+      "name": "XNViews",
+      "source_files": "XNTools/Classes/XNViews/**/*"
+    },
+    {
+      "name": "XNUtils",
+      "source_files": "XNTools/Classes/XNUtils/**/*"
+    },
+    {
+      "name": "XNUIVIewExtension",
+      "source_files": "XNTools/Classes/XNUIVIewExtension/**/*"
+    }
+  ]
+}
