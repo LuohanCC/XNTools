@@ -17,6 +17,7 @@
 #import "XNLottieVC.h"
 #import <XNTools/XNNavigationController.h>
 #import "XNRefreshController.h"
+#import "UIViewController+XNExtension.h"
 
 @interface Page1VC ()
 @property (nonatomic, strong) NSArray *viewDatas;

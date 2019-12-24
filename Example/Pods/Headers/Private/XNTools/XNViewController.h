@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNViewController/XNViewController.h
+../../../../../XNTools/Classes/ViewController/XNViewController.h

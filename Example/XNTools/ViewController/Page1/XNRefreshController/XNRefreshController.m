@@ -10,6 +10,7 @@
 #import <XNProgressHUD/XNProgressHUD.h>
 #import <XNProgressHUD/XNRefreshView.h>
 #import "UIViewController+XNProgressHUD.h"
+#import "OS.h"
 
 @interface XNRefreshController ()
 @property (weak, nonatomic) IBOutlet XNRefreshView *refreshView;
@@ -34,10 +35,12 @@
     _refreshView.label.font = [UIFont fontWithName:@"STHeitiTC-Light" size:14.f];
     _refreshView.style = XNRefreshViewStyleProgress;
  
-    [[XNProgressHUD shared] setPosition:CGPointMake(XNScreenWidth/2, XNScreenHeight * 0.7)];
+    float screenWidth = OS.screenWidth;
+    float screenHeight = OS.screenHeight;
+    [[XNProgressHUD shared] setPosition:CGPointMake(screenWidth/2, screenHeight * 0.7)];
     [[XNProgressHUD shared] setTintColor:[UIColor colorWithRGB:0x0A5591 alpha:0.7]];
     
-    [self.hud setPosition:CGPointMake(XNScreenWidth/2, XNScreenHeight * 0.7)];
+    [self.hud setPosition:CGPointMake(screenWidth/2, screenHeight * 0.7)];
 //    [self.hud setTintColor:[UIColor colorWithRGB:0x0A5591 alpha:0.7]];
     [self.hud setTintColor:[UIColor colorWithRGB:0x263238 alpha:0.8]];
     [self.hud setRefreshStyle:(XNRefreshViewStyleProgress)];

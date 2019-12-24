@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNViews/XNMultistageTableView/XNMultistageTableView.h
+../../../../../XNTools/Classes/Views/XNMultistageTableView/XNMultistageTableView.h

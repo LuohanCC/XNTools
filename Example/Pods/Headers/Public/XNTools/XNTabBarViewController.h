@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNViewController/XNTabBarViewController/XNTabBarViewController.h
+../../../../../XNTools/Classes/ViewController/XNTabBarViewController.h

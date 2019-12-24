@@ -11,6 +11,7 @@
 #import "Page2VC.h"
 #import <XNTools/XNViewController.h>
 #import <XNTools/XNNavigationController.h>
+#import "OS.h"
 
 @interface TabBarVC ()<XNTabBarViewControllerDelegate>
 
@@ -22,7 +23,7 @@
     if(!(self = [super init])) return nil;
     self.xnDelegate = self;
     
-    CGRect rect = CGRectMake(0, 0, XNScreenWidth, 1);
+    CGRect rect = CGRectMake(0, 0, OS.screenWidth, 1);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [UIColor colorWithRGB:0x777777 alpha:0.1].CGColor);

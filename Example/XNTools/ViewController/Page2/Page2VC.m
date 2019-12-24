@@ -8,6 +8,7 @@
 
 #import "Page2VC.h"
 #import "JPushVC.h"
+#import "UIViewController+XNExtension.h"
 
 @interface Page2VC ()
 @property (nonatomic, strong) NSArray *viewDatas;

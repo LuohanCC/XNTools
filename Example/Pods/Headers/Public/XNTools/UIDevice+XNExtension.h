@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNUIVIewExtension/UIDevice+XNExtension.h
+../../../../../XNTools/Classes/UIViewExtension/UIDevice+XNExtension.h

@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNViews/XNTableView/XNTableView.h
+../../../../../XNTools/Classes/Views/XNTableView/XNTableView.h

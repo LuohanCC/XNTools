@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNViews/XNBannerView/XNBannerView.h
+../../../../../XNTools/Classes/Views/XNBannerView/XNBannerView.h

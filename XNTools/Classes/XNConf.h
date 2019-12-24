@@ -8,43 +8,43 @@
 #ifndef XNConf_h
 #define XNConf_h
 
-#import "XNUtils.h"
+//#import "Utils/XNUtils.h"
 
 #pragma mark 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 尺寸相关定义 
-#define XNScrRealwidth   ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || \([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height)
-#define XNScrRealHeight  ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
-#define XNScreenWidthPx                 (XNScreenWidth * [UIScreen mainScreen].scale)
-#define XNScreenHeightPx                (XNScreenHeight * [UIScreen mainScreen].scale)
-#define XNScreenWidth                   [[UIScreen mainScreen] bounds].size.width
-#define XNScreenHeight                  [[UIScreen mainScreen] bounds].size.height
-#define XNScreenShortEdge               (XNScreenWidth<XNScreenHeight?XNScreenWidth:XNScreenHeight)
-#define XNIsIPhoneX                     [XNUtils isNotchScreen]
-#define XNStatusBarHeight               [[UIApplication sharedApplication] statusBarFrame].size.height
-#define XNNaviBarHeight                 (XNIsIPhoneX ? 88.f : 64.f)
-#define XNTabbarHeight                  (XNIsIPhoneX ? (49.f + 34.f) : 49.f)
-#define XNHomeIndicatorHeight           (XNIsIPhoneX ? 34.f : 0.f)
-
-#pragma mark 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 获取设备和APP版本信息
-#define XNAppDictionary                 [[NSBundle mainBundle] infoDictionary]
-#define XNAppName                       [XNAppDictionary objectForKey:@"CFBundleDisplayName"]
-#define XNAppVersion                    [XNAppDictionary objectForKey:@"CFBundleShortVersionString"]
-#define XNAppVersionValue               [XNAppVersion stringByReplacingOccurrencesOfString:@"." withString:@""]
-#define XNAppVersionValueEx             (XNAppVersionValue.length==2?[XNAppVersionValue stringByAppendingString:@"0"]:XNAppVersionValue)
-#define XNAPPBuildVersion               [XNAppDictionary objectForKey:@"CFBundleVersion"]
-#define XNDeviceNick                    [[UIDevice currentDevice] name]
-#define XNDeviceName                    [[UIDevice currentDevice] systemName]
-#define XNDeviceModel                   [[UIDevice currentDevice] model]
-#define XNDevicelocalizedModel          [[UIDevice currentDevice] localizedModel]
-#define XNDeviceSystemVersion           [[UIDevice currentDevice] systemVersion]
-#define XNDeviceSystemVersionValue      [[[UIDevice currentDevice] systemVersion] floatValue]
-
-#define XNNotificationCenter [NSNotificationCenter defaultCenter]
-
-#pragma mark 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 位置相关定义
-#define XNToastDefaultPosition          [NSValue valueWithCGPoint:CGPointMake(SCR_WIDTH/2, SCR_HEIGHT*0.8)]
-
-#pragma mark 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 APP相关定义
-#define XNAppDelegate                   [UIApplication sharedApplication].delegate
+//#define XNScrRealwidth   ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || \([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height)
+//#define XNScrRealHeight  ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
+//#define XNScreenWidthPx                 (XNScreenWidth * [UIScreen mainScreen].scale)
+//#define XNScreenHeightPx                (XNScreenHeight * [UIScreen mainScreen].scale)
+//#define XNScreenWidth                   [[UIScreen mainScreen] bounds].size.width
+//#define XNScreenHeight                  [[UIScreen mainScreen] bounds].size.height
+//#define XNScreenShortEdge               (XNScreenWidth<XNScreenHeight?XNScreenWidth:XNScreenHeight)
+//#define XNIsIPhoneX                     [XNUtils isNotchScreen]
+//#define XNStatusBarHeight               [[UIApplication sharedApplication] statusBarFrame].size.height
+#define XNNaviBarHeight                 (false ? 88.f : 64.f)
+#define XNTabbarHeight                  (false ? (49.f + 34.f) : 49.f)
+#define XNHomeIndicatorHeight           (false ? 34.f : 0.f)
+//
+//#pragma mark 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 获取设备和APP版本信息
+//#define XNAppDictionary                 [[NSBundle mainBundle] infoDictionary]
+//#define XNAppName                       [XNAppDictionary objectForKey:@"CFBundleDisplayName"]
+//#define XNAppVersion                    [XNAppDictionary objectForKey:@"CFBundleShortVersionString"]
+//#define XNAppVersionValue               [XNAppVersion stringByReplacingOccurrencesOfString:@"." withString:@""]
+//#define XNAppVersionValueEx             (XNAppVersionValue.length==2?[XNAppVersionValue stringByAppendingString:@"0"]:XNAppVersionValue)
+//#define XNAPPBuildVersion               [XNAppDictionary objectForKey:@"CFBundleVersion"]
+//#define XNDeviceNick                    [[UIDevice currentDevice] name]
+//#define XNDeviceName                    [[UIDevice currentDevice] systemName]
+//#define XNDeviceModel                   [[UIDevice currentDevice] model]
+//#define XNDevicelocalizedModel          [[UIDevice currentDevice] localizedModel]
+//#define XNDeviceSystemVersion           [[UIDevice currentDevice] systemVersion]
+//#define XNDeviceSystemVersionValue      [[[UIDevice currentDevice] systemVersion] floatValue]
+//
+//#define XNNotificationCenter [NSNotificationCenter defaultCenter]
+//
+//#pragma mark 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 位置相关定义
+//#define XNToastDefaultPosition          [NSValue valueWithCGPoint:CGPointMake(SCR_WIDTH/2, SCR_HEIGHT*0.8)]
+//
+//#pragma mark 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 APP相关定义
+//#define XNAppDelegate                   [UIApplication sharedApplication].delegate
 #define XNSelfBundle                    [NSBundle bundleForClass:[self class]]
 #define XNImage(name)                   [UIImage imageNamed:name]
 #define XNStringByJointString(base,url) [NSString stringWithFormat:@"%@%@",base,url]
@@ -92,27 +92,6 @@ fprintf(stderr, "%s\n", \
 #define XNLOG_SF(format, ...)
 #define XNLOG_S(string)
 #endif
-
-/*
- #define XNLOG(format, ...)\
- fprintf(stderr, "%s\n", \
- [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);
- 
- #define XNLOG_D(format, ...)\
- fprintf(stderr,"☘️[%s第%d行]:%s\n",\
- [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],\
- __LINE__, [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);
- 
- #define XNLOG_W(format, ...)\
- fprintf(stderr,"⚠️[%s第%d行]:%s\n",\
- [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],\
- __LINE__, [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);
- 
- #define XNLOG_E(format, ...)\
- fprintf(stderr,"❌[%s第%d行]:%s\n",\
- [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],\
- __LINE__, [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);
- */
 
 
 #pragma mark 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 kCString

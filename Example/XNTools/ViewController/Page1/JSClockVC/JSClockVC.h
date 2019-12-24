@@ -6,7 +6,7 @@
 //  Copyright © 2017年 罗函. All rights reserved.
 //
 
-#import <XNTools/XNViewController.h>
+#import "XNViewController.h"
 
 @interface JSClockVC : XNViewController
 

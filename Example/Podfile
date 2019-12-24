@@ -5,7 +5,7 @@ target 'XNTools_Example' do
 
   target 'XNTools_Tests' do
     inherit! :search_paths
-
-#    pod 'Canvas'
+    
+    pod 'lottie-ios'
   end
 end

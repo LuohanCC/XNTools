@@ -6,7 +6,7 @@
 //  Copyright © 2016年 罗函. All rights reserved.
 //
 
-#import <XNTools/XNViewController.h>
+#import "XNViewController.h"
 
 @interface SimpleTBVC : XNViewController
 @property (nonatomic, readwrite, copy) void (^CallBack)(NSInteger);

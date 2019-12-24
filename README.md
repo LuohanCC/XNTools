@@ -1,9 +1,9 @@
 # XNTools
 
 [![CI Status](http://img.shields.io/travis/罗函/XNTools.svg?style=flat)](https://travis-ci.org/罗函/XNTools)
-[![Version](https://img.shields.io/cocoapods/v/XNTools.svg?style=flat)](http://cocoapods.org/pods/XNTools)
+[![2.0.2](https://img.shields.io/cocoapods/v/XNTools.svg?style=flat)](http://cocoapods.org/pods/XNTools)
 [![License](https://img.shields.io/cocoapods/l/XNTools.svg?style=flat)](http://cocoapods.org/pods/XNTools)
-[![Platform](https://img.shields.io/cocoapods/p/XNTools.svg?style=flat)](http://cocoapods.org/pods/XNTools)
+[![ios 8.0](https://img.shields.io/cocoapods/p/XNTools.svg?style=flat)](http://cocoapods.org/pods/XNTools)
 
 ## Example
 

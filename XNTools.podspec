@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'XNTools'
-    s.version          = '2.0.1'
+    s.version          = '2.0.2'
     s.summary          = 'create XNTools by luohan'
     
     # This description is used to generate tags and improve search results.
@@ -21,45 +21,42 @@ Pod::Spec.new do |s|
     TODO: Add long description of the pod here1.
     DESC
     
-    s.homepage         = 'https://gitee.com/luohancc/XNTools.git'
+    s.homepage         = 'https://github.com/LuohanCC'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { '罗函' => 'luohancc@163.com' }
-    s.source           = { :git => 'https://gitee.com/luohancc/XNTools.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/LuohanCC/XNTools.git', :tag => s.version.to_s }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
     
-    s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '9.0'
     
-    #s.source_files = 'XNTools/Classes/**/*'
-    # ------ 文件夹(调用者能看到的文件夹) ------
-    
-    #XNTools
-    s.source_files = 'XNTools/Classes/*.h'
-    
-    #XNViewController
-    s.subspec 'XNViewController' do |ss|
-        ss.source_files = 'XNTools/Classes/XNViewController/**/*'
+    s.source_files = 'XNTools/Classes/**/*.{h,m}'
+
+    s.subspec 'Utils' do |s4|
+      s4.source_files = 'XNTools/Classes/Utils/**/*'
     end
     
-    #XNViews
-    s.subspec 'XNViews' do |ss|
-        ss.source_files = 'XNTools/Classes/XNViews/**/*'
+    s.subspec 'Views' do |ss|
+      ss.source_files = 'XNTools/Classes/Views/**/*'
+      ss.dependency 'Masonry'
+      ss.dependency 'XNProgressHUD'
     end
-    
-    #XNUtils
-    s.subspec 'XNUtils' do |ss|
-        ss.source_files = 'XNTools/Classes/XNUtils/**/*'
-    end
-    
-    #XNUIVIewExtension
-    s.subspec 'XNUIVIewExtension' do |ss|
-        ss.source_files = 'XNTools/Classes/XNUIVIewExtension/**/*'
-    end
-    
-#    #XNAFNHelper
-#    s.subspec 'XNAFNHelper' do |ss|
-#        ss.source_files = 'XNTools/Classes/XNAFNHelper/**/*'
+
+#     s.subspec 'UIViewExtension' do |ss|
+#        ss.source_files = 'XNTools/Classes/UIViewExtension/**/*'
+#        ss.requires_arc = true
 #    end
+#
+#    s.subspec 'ViewController' do |ss|
+#        ss.source_files = 'XNTools/Classes/ViewController/**/*'
+#        ss.requires_arc = true
+#    end
+#
+    
+#
+##
+#    s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PLATFORM_DIR)/Developer/Library/Frameworks" }
+
 #
     # ------ 资源（图片、Xib、其他Bundle） ------
     s.resource_bundles = {
@@ -72,7 +69,8 @@ Pod::Spec.new do |s|
     s.dependency 'SDWebImage'
     s.dependency 'AFNetworking'
     s.dependency 'XNProgressHUD'
-    s.dependency 'lottie-ios'
+    
+    s.swift_version='4.0'
     
     # ------ 平台支持 ------
     valid_archs = ['arm64', 'armv7', 'armv7s']

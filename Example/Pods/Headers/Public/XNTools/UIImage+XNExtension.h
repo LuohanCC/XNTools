@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNUIVIewExtension/UIImage+XNExtension.h
+../../../../../XNTools/Classes/UIViewExtension/UIImage+XNExtension.h

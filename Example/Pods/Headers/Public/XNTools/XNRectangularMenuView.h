@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNViews/XNRectangularMenuView/XNRectangularMenuView.h
+../../../../../XNTools/Classes/Views/XNRectangularMenuView/XNRectangularMenuView.h

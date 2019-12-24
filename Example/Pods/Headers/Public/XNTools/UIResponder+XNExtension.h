@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNUIVIewExtension/UIResponder+XNExtension.h
+../../../../../XNTools/Classes/UIViewExtension/UIResponder+XNExtension.h

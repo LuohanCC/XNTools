@@ -21,51 +21,33 @@ PODS:
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
   - XNProgressHUD (1.0.2)
-  - XNTools (1.6.7):
+  - XNTools (2.0.2):
     - AFNetworking
-    - lottie-ios
     - Masonry
     - MJRefresh
     - SDWebImage
     - XNProgressHUD
-    - XNTools/XNUIVIewExtension (= 1.6.7)
-    - XNTools/XNUtils (= 1.6.7)
-    - XNTools/XNViewController (= 1.6.7)
-    - XNTools/XNViews (= 1.6.7)
-  - XNTools/XNUIVIewExtension (1.6.7):
+    - XNTools/Utils (= 2.0.2)
+    - XNTools/Views (= 2.0.2)
+  - XNTools/Utils (2.0.2):
     - AFNetworking
-    - lottie-ios
     - Masonry
     - MJRefresh
     - SDWebImage
     - XNProgressHUD
-  - XNTools/XNUtils (1.6.7):
+  - XNTools/Views (2.0.2):
     - AFNetworking
-    - lottie-ios
-    - Masonry
-    - MJRefresh
-    - SDWebImage
-    - XNProgressHUD
-  - XNTools/XNViewController (1.6.7):
-    - AFNetworking
-    - lottie-ios
-    - Masonry
-    - MJRefresh
-    - SDWebImage
-    - XNProgressHUD
-  - XNTools/XNViews (1.6.7):
-    - AFNetworking
-    - lottie-ios
     - Masonry
     - MJRefresh
     - SDWebImage
     - XNProgressHUD
 
 DEPENDENCIES:
+  - lottie-ios
   - XNTools (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - lottie-ios
     - Masonry
@@ -84,8 +66,8 @@ SPEC CHECKSUMS:
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   XNProgressHUD: 41ab8c58dd53a1d3bccbcfbef90d8584b1d6e70b
-  XNTools: 6237baff8f74c39d03243204237e4e13848e4799
+  XNTools: 0ab850dfeae0839eab934da920753369e439fa89
 
-PODFILE CHECKSUM: a1f0140a6b5a236e6544fc0e4ee8d94fe86a52b2
+PODFILE CHECKSUM: 42995d9b3d969c3d9ccf86c65023c409655f2a43
 
-COCOAPODS: 1.7.0
+COCOAPODS: 1.8.4

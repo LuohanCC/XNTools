@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNViews/XNTableViewCell/XNTitleAndSwitchTBCell.h
+../../../../../XNTools/Classes/Views/XNTableViewCell/XNTitleAndSwitchTBCell.h

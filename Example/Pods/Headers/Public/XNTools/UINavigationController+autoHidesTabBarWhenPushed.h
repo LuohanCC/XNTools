@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNViewController/XNTabBarViewController/UINavigationController+autoHidesTabBarWhenPushed.h
+../../../../../XNTools/Classes/ViewController/UINavigationController+autoHidesTabBarWhenPushed.h

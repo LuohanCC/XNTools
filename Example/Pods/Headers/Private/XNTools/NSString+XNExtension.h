@@ -1,1 +1,1 @@
-../../../../../XNTools/Classes/XNUIVIewExtension/NSString+XNExtension.h
+../../../../../XNTools/Classes/UIViewExtension/NSString+XNExtension.h
